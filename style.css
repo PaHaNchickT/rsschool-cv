@@ -30,7 +30,11 @@ footer ul {
     height: 7em;
 }
 
-ul a:visited {
+ul a:link{
+    color: #efe9d3;
+}
+
+ul a:visited{
     color: #efe9d3;
 }
 
@@ -58,7 +62,11 @@ p {
     text-align: justify;
 }
 
-p a:visited {
+p a:link{
+    color: black;
+ }
+
+p a:visited{
    color: black;
 }
 
