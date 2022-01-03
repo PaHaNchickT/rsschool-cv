@@ -21,15 +21,84 @@
             </ul>
         </nav>
     </header>
-    <main>main
-        <section class='abt' id='abt'>About myself</section>
-        <section class='cod' id='cod'>Code sample</section>
-        <section class='exp' id='exp'>Experience</section>
-        <section class='edu' id='edu'>Education</section>
-        <section class='eng' id='eng'>English level</section>
+    <main>
+        <div class='cnt'>
+            <section class='abt' id='abt'>
+                <h1>Pavel Terno</h1>
+                <img src='img/photo.png' alt='Pavel Terno'>
+                <h2>About myself</h2>
+                <p>I graduated from St. Petersburg State University undergraduate degree in chemistry. During all my life I loved making
+                    videos and working with computer graphics. During the COVID pandemic, I realized that I wanted to broaden my horizons
+                    and began to take various courses.
+                    Now I work at an enterprise for the production of state standard samples, but in the future I would like to finally 
+                    move to IT. I really like making sites and I would like to learn how to create complex and beautiful sites based on 
+                    Javascript.
+                    In my spare time I love to understand scripts to open and explore different unoppened game files. Then I making videos 
+                    about content that I found and upload it on my YouTube channel called <b><a href='https://www.youtube.com/spideysanta'>Spidey Santa</a></b>.</p>
+            </section>
+            <section class='cod' id='cod'>
+                <h2>Code sample</h2>
+                <pre><code>function primeValues(arr) {
+    let out = [];
+    arr.forEach(e1 => {
+        let inp = [];
+        let a = 1;
+        inp.push(a)
+        while (a<e1) {
+            a++
+            inp.push(a)
+        }
+
+        let x = 0;
+        let y = 0;
+        let z = 0;
+        inp.forEach(e2 => {
+            if (e1%e2 === 0) {
+                if (e2===e1) {
+                    x = 1;
+                } else if (e2===1) {
+                    y = 1;
+                } else {
+                    z = 1;
+                }
+            }
+        })
+
+        if (x===1 && z===0) {
+            out.push(true);
+        } else if (y===1 && z===0) {
+            out.push(true);
+        } else {
+            out.push(false);
+        }
+    })
+    return(out);
+};</code></pre>
+            </section>
+            <section class='exp' id='exp'>
+                <h2>Experience</h2>
+                <p>Unfortunately, I have no experience of participating in IT projects.</p>
+            </section>
+            <section class='edu' id='edu'>
+                <h2>Education</h2>
+                <p>
+                    <ul>
+                        <li>Saint-Petersburg state university (bachelor)</li>
+                        <li>Epam Learn, “HTML CSS Program with Personal Mentor"</li>
+                        <li>Epam Learn, “Basic JavaScript with Personal Mentor”</li>
+                        <li>Open education, “Web development”</li>
+                    </ul>
+                    <img src='img/epam.png' class='epam' alt='epam diploma'>
+                </p>
+            </section>
+            <section class='eng' id='eng'>
+                <h2>English level</h2>
+                <p>Level of English I have is comparable to the B2 level of the Common European Framework of Reference for Languages</p>
+            </section>
+        </div>
     </main>
     <footer>footer
-        <ul>
+        <ul class='ul_foot'>
             <li>e-mail</li>
             <li>discord</li>
             <li>github</li>

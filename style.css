@@ -9,15 +9,15 @@ header {
     border-bottom: 3px solid #3a2a2b;
     font-size: 20px;
     background-color: #4a473e;
-    padding-bottom: 10px;
+    padding: 0px 50px 10px 50px;
 }
 
-ul {
+header ul, footer ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     color: #efe9d3;
 }
@@ -26,7 +26,7 @@ ul {
     height: 7em;
 }
 
-a:visited {
+ul a:visited {
     color: #efe9d3;
 }
 
@@ -38,6 +38,46 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+p a:visited {
+   color: black;
+}
+
 main {
     background-color: #efe9d3;
+}
+
+.cnt {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+code {
+    padding: 0;
+    margin: 0;
+}
+
+pre {
+    padding: 10px;
+    background-color: white;
+}
+
+.epam {
+    width: 500px;
 }
