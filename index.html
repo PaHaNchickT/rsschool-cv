@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='ul_head'>
+                <li><a href="#abt">About myself</a></li>
+                <li><a href="#skl">Skills</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#cod">Code sample</a></li>
+                <li><a href="#eng">English level</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class='cnt'>
+            <section class='abt' id='abt'>
+                <h1>Pavel Terno</h1>
+                <img src='img/photo.png' alt='Pavel Terno' class='avatar'>
+                <h2>About myself</h2>
+                <p>I graduated from St. Petersburg State University undergraduate degree in chemistry. During all my
+                    life I loved making
+                    videos and working with computer graphics. During the COVID pandemic, I realized that I wanted to
+                    broaden my horizons
+                    and began to take various courses.
+                    Now I work at an enterprise for the production of state standard samples, but in the future I would
+                    like to finally
+                    move to IT. I really like making sites and I would like to learn how to create complex and beautiful
+                    sites based on
+                    Javascript.
+                    In my spare time I love to understand scripts to open and explore different unoppened game files.
+                    Then I making videos
+                    about content that I found and upload it on my YouTube channel called <b><a
+                            href='https://www.youtube.com/spideysanta'>Spidey Santa</a></b>.</p>
+            </section>
+            <section class='skl' id='skl'>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Could complete the task in a short time;</li>
+                    <li>Always approach the execution of the case creatively;</li>
+                    <li>Got experience in using Photoshop, which helps in site making.</li>
+                </ul>
+            </section>
+            <section class='exp' id='exp'>
+                <h2>Experience</h2>
+                <p>Unfortunately, I have no experience of participating in IT projects.</p>
+            </section>
+            <section class='edu' id='edu'>
+                <h2>Education</h2>
+                <ul>
+                    <li>Saint-Petersburg state university (bachelor);</li>
+                    <li>Epam Learn, “HTML CSS Program with Personal Mentor";</li>
+                    <li>Epam Learn, “Basic JavaScript with Personal Mentor”;</li>
+                    <li>Open education, “Web development”.</li>
+                </ul>
+                <img src='img/epam.png' class='epam' alt='epam diploma'>
+            </section>
+            <section class='cod' id='cod'>
+                <h2>Code sample</h2>
+                <pre><code>function primeValues(arr) {
+    let out = [];
+    arr.forEach(e1 => {
+        let inp = [];
+        let a = 1;
+        inp.push(a)
+        while (a<e1) {
+            a++
+            inp.push(a)
+        }
+
+        let x = 0;
+        let y = 0;
+        let z = 0;
+        inp.forEach(e2 => {
+            if (e1%e2 === 0) {
+                if (e2===e1) {
+                    x = 1;
+                } else if (e2===1) {
+                    y = 1;
+                } else {
+                    z = 1;
+                }
+            }
+        })
+
+        if (x===1 && z===0) {
+            out.push(true);
+        } else if (y===1 && z===0) {
+            out.push(true);
+        } else {
+            out.push(false);
+        }
+    })
+    return(out);
+};</code></pre>
+            </section>
+            <section class='eng' id='eng'>
+                <h2>English level</h2>
+                <p>Level of English I have is comparable to the B2 level of the Common European Framework of Reference
+                    for Languages.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <ul class='ul_foot'>
+            <li><b>e-mail:</b> pt1999@mail.ru</li>
+            <li><b>discord:</b> Pavel Terno (@PaHaNchickT) / ЗИЛИБОБКА-БЕЗУПРЕЧНЫЙ#4853</li>
+            <li><b>github:</b><a href='https://github.com/PaHaNchickT'> PaHaNchickT</a></li>
+            <li><b>course link:</b><a href='https://rs.school/js/'> JavaScript/Front-end</a></li>
+        </ul>
+        <img src="img/logo.png" alt='RS School logo' class='rs'>
+        <div class='end'>© The Rolling Scopes. Made in 2013</div>
+    </footer>
+</body>
+
+</html>
