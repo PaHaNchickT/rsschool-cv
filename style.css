@@ -123,3 +123,7 @@ h3 {
     left: calc(100vw - 180px);
     top: 30px;
 }
+
+.avatar {
+    margin: 10px 0px;
+}
